@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { MenuIcon } from 'lucide-react'
 import data from '@/lib/data'
-import Search from './Search'
 import Menu from './Menu'
+import Search from './Search'
 
 const Header = () => {
   return (
