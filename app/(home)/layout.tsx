@@ -1,4 +1,4 @@
-import Footer from '@/components/shared/footer'
+import Footer from '@/components/shared/Footer'
 import Header from '@/components/shared/header'
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
