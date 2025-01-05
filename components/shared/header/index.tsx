@@ -18,7 +18,7 @@ const Header = () => {
               className='flex items-center header-button font-extrabold text-2xl m-1'
             >
               <Image
-                src='/icons/logo.svg '
+                src='/icons/logo.svg'
                 width={40}
                 height={40}
                 alt={`${APP_NAME} logo`}
@@ -38,7 +38,7 @@ const Header = () => {
       <div className='flex items-center px-3 mb-[1px] bg-gray-800'>
         <Button
           variant='ghost'
-          className='header-button flex items-center gap-1 text-base [&_svg]:size-6'
+          className='dark header-button flex items-center gap-1 text-base [&_svg]:size-6'
         >
           <MenuIcon />
           All
