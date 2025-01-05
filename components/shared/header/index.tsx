@@ -2,8 +2,9 @@ import { APP_NAME } from '@/lib/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Menu, MenuIcon, Search } from 'lucide-react'
+import { MenuIcon, Search } from 'lucide-react'
 import data from '@/lib/data'
+import Menu from './menu'
 
 const Header = () => {
   return (
