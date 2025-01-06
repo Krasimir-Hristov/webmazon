@@ -64,8 +64,8 @@ const HomeCarousel = ({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className='left-0 md:-left-12' />
-      <CarouselNext className='right-0 md:-right-12' />
+      <CarouselPrevious className='absolute top-1/2 transform -translate-y-1/2 left-4 md:left-8 z-10' />
+      <CarouselNext className='absolute top-1/2 transform -translate-y-1/2 right-4 md:right-8 z-10' />
     </Carousel>
   )
 }
