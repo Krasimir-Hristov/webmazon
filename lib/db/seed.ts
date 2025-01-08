@@ -16,7 +16,7 @@ const main = async () => {
 
     console.log({ createdProducts, message: 'Seed data successfully imported' })
   } catch (error) {
-    console.error('Seed data import failed' || error)
+    console.error({ error, message: 'Failed to seed data' })
     throw new Error('Failde to seed data')
   }
 }
