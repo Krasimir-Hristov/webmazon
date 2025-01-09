@@ -1,7 +1,13 @@
 import React from 'react'
 import { Star } from 'lucide-react'
 
-const Rating = ({ rating = 0, size = 6 }: { rating: number; size: number }) => {
+const Rating = ({
+  rating = 0,
+  size = 6,
+}: {
+  rating: number
+  size?: number
+}) => {
   const fullStars = Math.floor(rating)
   const partialStar = rating % 1
   const emptyStars = 5 - Math.ceil(rating)
