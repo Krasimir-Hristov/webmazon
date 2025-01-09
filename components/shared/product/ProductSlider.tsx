@@ -4,8 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel'
 import { IProduct } from '@/lib/db/models/product.model'
 import ProductCard from './ProductCard'
