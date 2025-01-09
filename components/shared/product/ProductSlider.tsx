@@ -51,12 +51,8 @@ const ProductSlider = ({
         </CarouselContent>
 
         {/* Navigation Buttons */}
-        <CarouselPrevious className='absolute left-2 top-1/2 -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-lg'>
-          ⬅
-        </CarouselPrevious>
-        <CarouselNext className='absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-lg'>
-          ➡
-        </CarouselNext>
+        <CarouselPrevious className='absolute top-1/2 transform -translate-y-1/2 left-4 md:left-8 z-10' />
+        <CarouselNext className='absolute top-1/2 transform -translate-y-1/2 right-4 md:right-8 z-10' />
       </Carousel>
     </div>
   )
