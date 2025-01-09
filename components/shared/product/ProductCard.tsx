@@ -5,7 +5,7 @@ import React from 'react'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { IProduct } from '@/lib/db/models/product.model'
 
-import Rating from './Rating'
+import Rating from './rating'
 import { formatNumber } from '@/lib/utils'
 import ProductPrice from './ProductPrice'
 import ImageHover from './ImageHover'
@@ -66,7 +66,7 @@ const ProductCard = ({
         isDeal={product.tags.includes('todays-deal')}
         price={product.price}
         listPrice={product.listPrice}
-        forListing
+        // forListing
       />
     </div>
   )

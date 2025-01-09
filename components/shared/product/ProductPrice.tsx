@@ -6,14 +6,14 @@ const ProductPrice = ({
   className,
   listPrice = 0,
   isDeal = false,
-  forListing = true,
+  // forListing = true,
   plain = false,
 }: {
   price: number
   className?: string
   listPrice?: number
   isDeal?: boolean
-  forListing?: boolean
+  // forListing?: boolean
   plain?: boolean
 }) => {
   const discountPrecent = Math.round(100 - (price / listPrice) * 100)
