@@ -43,6 +43,59 @@ const ProductCard = ({
       </div>
     </Link>
   )
+
+  const ProductDetails = () => (
+    <div className='flex-1 space-y-2'>
+      <p className='font-bold'>{product.slug}</p>
+      <Link
+        href={`/product/${product.slug}`}
+        className='overflow-hidden text-ellipsis'
+        style={{
+          display: '-webkit-box',
+          WebkitLineClamp: 2,
+          WebkitBoxOrient: 'vertical',
+        }}
+      >
+        {product.name}
+      </Link>
+      <div className='flex gap-2 justify-center'>
+        <Rating rating={product.avgRating} />
+        <span>({formatNumber(product.numReviews)})</span>
+      </div>
+      <ProductPrice
+        isDeal={product.tags.includes('todays-deal')}
+        price={product.price}
+        listPrice={product.listPrice}
+        forListing
+      />
+    </div>
+  )
+
+  return hideBorder ? (
+    <div className='flex flex-col'>
+      <ProductImage />
+      {!hideDetails && (
+        <>
+          <div className='p-3 flex-1 text-center'>
+            <ProductDetails />
+          </div>
+        </>
+      )}
+    </div>
+  ) : (
+    <Card className='flex flex-1'>
+      <CardHeader className='p-3'>
+        <ProductImage />
+      </CardHeader>
+      {!hideDetails && (
+        <>
+          <CardContent className='p-3 flex-1 text-center'>
+            <ProductDetails />
+          </CardContent>
+        </>
+      )}
+    </Card>
+  )
 }
 
 export default ProductCard
