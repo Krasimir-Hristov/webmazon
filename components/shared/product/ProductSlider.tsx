@@ -6,7 +6,7 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel'
 import { IProduct } from '@/lib/db/models/product.model'
-import ProductCard from './productCard'
+import ProductCard from './ProductCard'
 
 const ProductSlider = ({
   titel,
