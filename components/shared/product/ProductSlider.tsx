@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from '@/components/ui/carousel'
 import { IProduct } from '@/lib/db/models/product.model'
 import ProductCard from './ProductCard'
@@ -18,8 +20,10 @@ const ProductSlider = ({
   hideDetails?: boolean
 }) => {
   return (
-    <div className='w-full bg-background'>
+    <div className='w-full bg-background relative'>
       <h2 className='h2-bold mb-5'>{titel}</h2>
+
+      {/* Carousel */}
       <Carousel
         opts={{
           align: 'start',
@@ -45,6 +49,14 @@ const ProductSlider = ({
             </CarouselItem>
           ))}
         </CarouselContent>
+
+        {/* Navigation Buttons */}
+        <CarouselPrevious className='absolute left-2 top-1/2 -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-lg'>
+          ⬅
+        </CarouselPrevious>
+        <CarouselNext className='absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-lg'>
+          ➡
+        </CarouselNext>
       </Carousel>
     </div>
   )
